@@ -1,0 +1,88 @@
+body {
+  max-width: 2200px;
+  width: 1500px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  height: auto;
+  background-color: #e9e9e9;
+  background-image: url(img/bg.png);
+  background-repeat: repeat;
+}
+.header {
+  text-align: center;
+  vertical-align: middle;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 130px;
+  background-color: #e9e9e9;
+  margin-bottom: 2px;
+}
+.logo {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.nameweb {
+  font-family: sans-serif;
+  font-size: 55px;
+  color: #000000;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-weight: bold;
+  text-shadow: 1px 2px 3px rgba(255, 22, 22, 0.8);
+}
+.main {
+  text-align: center;
+  vertical-align: middle;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  background-color: #e9e9e9;
+  font-size: 20px;
+}
+
+ul .main {
+  margin: 6px 0 0 0;
+}
+
+li .main {
+  list-style: none;
+  display: block;
+  width: 200px;
+  padding: 25px 0 15px 0;
+}
+
+.content {
+  text-align: center;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: #e9e9e9;
+}
+.contact {
+  text-align: center;
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  background-color: #e9e9e9;
+}
+
+footer {
+  max-width: 2200px;
+  width: 1400px;
+  margin-top: 2px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  background-color: #e9e9e9;
+}
