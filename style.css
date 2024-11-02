@@ -5,18 +5,16 @@ body {
   margin-bottom: 0px;
   margin-left: auto;
   height: auto;
-  background-color: rgba(0, 0, 0, 0.726);
-  background-image: url(img/bg.png);
-  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.87);
 }
 .header {
   width: 1400px;
   margin-right: auto;
   margin-left: auto;
   vertical-align: middle;
-  height: 180px;
+  height: auto;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.726);
+  background-color: rgb(0, 0, 0);
 }
 .header img {
   padding-top: 10px;
@@ -30,7 +28,7 @@ body {
   color: #6a207e;
   padding-top: 50px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-left: 40px;
   font-weight: bold;
   text-shadow: 1px 2px 3px rgba(90, 101, 101, 0.8);
@@ -38,43 +36,14 @@ body {
 .nameweb {
   font-family: sans-serif;
   font-size: 55px;
-  color: #ffb004d5;
+  color: #ffb004;
   padding-top: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
   font-weight: bold;
-  text-shadow: 1px 2px 3px rgba(6, 26, 202, 0.863);
-}
-.main {
-  background-color: rgba(0, 0, 0, 0.726);
-  float: left;
-  height: 1500px;
-  width: 300px;
-}
-.navbox {
-  font-weight: bold;
-  float: left;
-  height: 260px;
-  margin: 0px;
-  padding: 0px;
-  background: rgba(0, 0, 0, 0.726);
-  font-size: 12px;
-  background-image: url(img/bg.png);
-  background-repeat: repeat;
-}
-ul.nav {
-  list-style: none;
-  display: block;
-  width: 200px;
-  padding: 25px 0 15px 0;
-}
-ul {
-  list-style: none;
-  display: block;
-}
-li {
-  margin: 6px 0 0 0;
+  text-overflow: clip;
+  text-shadow: 2px 3px 4px rgb(201, 201, 201);
 }
 ul.nav li a {
   -webkit-transition: all 0.3s ease-out;
@@ -93,23 +62,24 @@ ul.nav li a:hover {
 }
 .contentpag {
   height: auto;
-  width: 1400px;
-  padding: 0px;
-  margin: 0px;
-  background-color: rgba(0, 0, 0, 0.726);
+  width: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  padding-bottom: auto;
+  background-color: rgba(253, 162, 77, 0.76);
 }
 .content {
-  width: 1050px;
-  padding-right: 40px;
-  padding-left: 10px;
+  width: auto;
   height: auto;
   float: right;
-  background-color: rgba(0, 0, 0, 0.726);
-  margin-top: 0px;
+  background-color: rgba(253, 162, 77, 0.76);
+  margin-top: auto;
   margin-right: auto;
-  margin-bottom: 0px;
+  margin-bottom: auto;
   margin-left: auto;
-  padding-bottom: 25px;
+  padding-bottom: auto;
 }
 .limpieza {
   clear: both;
@@ -147,4 +117,82 @@ ul.nav li a:hover {
   margin-left: 20px;
   text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.8);
   text-decoration: underline;
+}
+.image_iz {
+  display: inline-block;
+  line-height: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 4px solid #fffdfd;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  margin-left: 0px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.image_der {
+  display: inline-block;
+  line-height: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 4px solid #fffdfd;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  margin-left: 20px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+section {
+  display: none;
+  margin: 2em;
+}
+section.active {
+  display: block;
+}
+nav {
+  background-color: #000000;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  color: #f0f0f0;
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #f0f0f0;
+  padding: 5px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-shadow: 1px 2px 3px rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+}
+p {
+  font-size: 16px;
+  margin: 6px;
+  line-height: 2.7;
+  color: #000000;
+}
+ul {
+  display: block;
+  list-style: none;
+}
+li {
+  font-size: 16px;
+  line-height: 2.7;
 }

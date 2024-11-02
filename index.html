@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="author" content="Aaron Gomez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Página dedicada a proyectos 3D útiles" >
-    <meta name="keywords" content="print3d, creality, prusa, bambu, orcaslicer, stl, 3mf, ">
+    <meta name="description" content="Página dedicada a proyectos 3D útiles" />
+    <meta
+      name="keywords"
+      content="print3d, creality, prusa, bambu, orcaslicer, stl, 3mf, "
+    />
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Proyectos3D</title>
+    <script>
+      function mostrarSeccion(seccionId) {
+        var secciones = document.querySelectorAll('section')
+        secciones.forEach(function (seccion) {
+          seccion.classList.remove('active')
+        })
+        document.getElementById(seccionId).classList.add('active')
+      }
+    </script>
   </head>
 
   <body>
@@ -24,62 +36,144 @@
       </div>
       <div class="nameweb">p3d Proyectos, make is possible</div>
     </div>
-    
+
     <!--contenido pagina cliente-->
-  <div class="contentpag">
-    <!--menu lateral siempre visible-->
-    <div class="main">
-          <div class="navbox">
-          <ul class="nav">
-            <li><a href="index.html">Quienes Somos</a></li>
-            <li><a href="index.html">Que hacemnos</a></li>
-            <li><a href="index.html">Nuestros trabajos</a></li>
-            <li><a href="index.html">Contacta con nosotros</a></li>
-          </ul>
-        </div>
+    <div class="contentpag">
+      <!--menu siempre visible-->
+      <nav class="navbox">
+        <a href="#" onclick="mostrarSeccion('inicio')">INICIO</a>
+        <a href="#" onclick="mostrarSeccion('quien')">QUIEN SOY</a>
+        <a href="#" onclick="mostrarSeccion('proyectos')">PROYECTOS</a>
+        <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>
+      </nav>
+       <div class="content">
+        <section id="inicio" class="active">
+          <h1>Proyectos 3d, aqui encontraras tutoriales</h1>
+            <p>
+            <img class="image_iz" src="img/fotos/IMG-20241102-WA0004.jpg" width="150" align="left">
+            Todas las impresiones mostradas, han sido realizadas tras varios ajustes, a veces, como es frecuente en este mundo, despuies de varias impresiones fallidas.
+            Impresiones desde que abarcan desde juguetes hasta herramientas de carpinteria y diseño.
+            
+            </p>
+          <h2>Informacion util</h2>
+          <img class="image_der" src="img/fotos/IMG-20241102-WA0005.jpg" width="150" align="right">
+            <p>
+            En estos tutoriales usamos la impresora Ender 3 v3 KE, sacamos el maximo rendimiento con el filamento Sunlu High Speed PLA, con un coste medio de 17€/kg, alcanzando velocidades de impresion de entre 300mm/s hasta un maximo de 600 mm/s.
+          </p>
+          <p> 
+            Los STL fueron obtenidos de forma gratuita en estas páginas web:
+            <ul>
+              <li><a href="https://www.thingiverse.com/">https://www.thingiverse.com/</a></li>
+              <li><a href="https://cults3d.com/es">https://cults3d.com/es</a></li>
+              <li><a href="https://www.printables.com/">https://www.printables.com/</a></li>
+              <li><a href="https://www.crealitycloud.com/">https://www.crealitycloud.com/</a></li>
+            </ul>  
+            Muchos se han modificado para atender a mis necesidades, usando Blender y Mexmixer, siguiendo diversos tutoriales de Youtube.
+          
+          </p>
 
-    </div>
-    <div class="content">
-        <div class="who"></div>
-        <div class="make"></div>
-        <div class="jobs">
+        </section>
+        <section id="quien">
+          <h1>Aarón Gómez</h1>
+          <p >Ciclo formativo de grado superior en Administración de sistemas informáticos. </p>
+          <p >(IFCD0210) Certificación profesional en Desarrollo de aplicaciones con tecnologia web 2014 (RD 1531/2011, de 31 de octubre por el RD 628/2013, de 2 de agosto).</p>
+          <h3>Sobre mi</h3>
+          <p>
+          Generación Y, Millennial, a mis 40 años cargo a mis espaldas ser la ultima generacion que uso el analógico y ser la primera en vivir a diario con la era digital.
+          Descubrir la tecnologia táctil, y ver avazar todo a pasos de gigante. </p>
+          <h3>La mejor descripcion viene por Google:</h3>
+          <p>
+          Desde temprana edad, los Millennials han adoptado y adaptado nuevas tecnologías, lo que los convierte en auténticos nativos digitales. Esta familiaridad con la tecnología les ha permitido estar siempre a la vanguardia en el uso de dispositivos móviles, redes sociales y plataformas digitales, cambiando la forma en que nos comunicamos, trabajamos y vivimos.</p>
+          <h3>Valores y Perspectivas</h3>
+          <p>
+          Los Millennials valoran la autenticidad, la transparencia y la responsabilidad social. Son defensores del cambio y la innovación, buscando constantemente nuevas formas de mejorar el mundo a su alrededor. Prefieren las experiencias sobre las posesiones materiales y priorizan el equilibrio entre la vida laboral y personal.<br>
+          Mi primer ordenador, un Pentium 100, 8 mb de RAM, sus sustema era esa pantalla negra, que hoy en dia es el CMD, esas interminables lineas de codigo para crear carpetas, para instalar juegos, o inciar ese primer Windows 3.11 que instale con 1 diskete pirata.</p>
+          
+          <h3>Experiencia laboral</h3>
+          <p>
           <ul>
-            <li>
-              <video width="220" height="220" controls>
-                <source src="ruta_del_video.webm" type="video/webm" />
-                Impresion juego
-              </video>
-            </li>
-            <li><video width="220" height="220" controls>
-                <source src="ruta_del_video.webm" type="video/webm" />
-                Impresion juego</li>
-            <li><video width="220" height="220" controls>
-                <source src="ruta_del_video.webm" type="video/webm" />
-                Impresion juego</li>
+            <li>Ejecito de tierra, Brigada de montaña (2003-2005)</li>
+            <li>Trabajos en la cosntrucción y como camarero en barias empresas mientras estudiaba nuevamente.(2006-2008)</li>
+            <li>Tecnico Instalador en Digicom Telecomunicaciones(2008-2012)</li>
+            <li>Responsable técnico para Tiendas Comunicalia(2014-2016)</li>
+            <li>Helpdesk informático para Madison Telecyl, empresa Telecable(2016-2017)</li>
+            <li>Tecnico Instalador de sistemas de seguridad en Prosegur Alarmas(2017-2021)</li>
+            <li>Tecnico Instalador y mantenedor de PCI y seguridad en Keeper Galicia(2021-actualmente)</li>
           </ul>
-        </div>
-  
-    
-    <div class="contact">
-      <form>
-        formulario oculto por estilos, solo visible al pulsar contacto aqui el
-        formulario al final de la web sucribirse al newsletter o contactar
-        Nombre correo electrónico Asunto Mensaje enviar ejemplo
-      </form>
-    </div>
-  </div>
-  </div>
-  <div class="limpieza"></div>
-  
-<div class="pie">
-  <div class="enlaces">
-      <a href="index.html">AVISO LEGAL</a> | 
-      <a href="index.html">CONTACTO</a>|
-      <a href="index.html"> DISE&Ntilde;O: AaronGomez</a> 
-  
-  </div>
-  </div>
+          </p>
 
+        </section>
+        <section id="proyectos">
+          <p>¿Qué Es un Portafolio de Diseño? Un portafolio de diseño es
+          básicamente una colección de tu trabajo. En él, mostrarás tus
+          habilidades, experiencia y creatividad. Normalmente, es una colección
+          digital de imágenes, videos, u otros medios, que exhiben tu obra de
+          modo profesional y pulido. ¿Por Qué Necesitas un Portafolio de Diseño?
+          Como diseñador, tu portafolio será esencial. Será una representación
+          visual de tus habilidades y experiencia para posibles clientes,
+          empleadores o colaboradores. Además, te permitirá mostrar tu trabajo
+          gráfico y demostrar tu capacidad para resolver problemas de diseño,
+          trabajar dentro de limitaciones y ofrecer soluciones efectivas de
+          imagen. Aquí hay algunas razones por las que deberías tener tu propio
+          portafolio de diseño: Resaltar tu talento: Un portafolio de diseño es
+          una grandiosa manera de exhibir tus habilidades y experiencia a
+          posibles clientes, empleadores o colaboradores. Al presentar tu
+          trabajo de manera profesional y pulida, puedes demostrar tu capacidad
+          y comunicar tu valor como diseñador. Diferenciarte de los demás: En un
+          campo tan competitivo como es el de diseño, tener un portafolio que se
+          destaque, puede ayudarte a diferenciarte entre otros diseñadores. Al
+          mostrar tu estilo, enfoque, o perspectiva única, demostrarás tu
+          creatividad y valor agregado. Construir marca personal: Un portafolio
+          de diseño también es una oportunidad de construir y desarrollar tu
+          marca personal. Al mostrar tu obra de manera consistente y cohesiva,
+          mostrarás tu sello y crearás una impresión duradera en quien te
+          visite; clientes, empleadores o colaboradores. Atraer nuevos clientes
+          o empleadores: Un portafolio de diseño, te ayudará a atraer
+          empleadores y clientes, pues demostrarás tu capacidad para ofrecer
+          soluciones efectivas. Además, al mostrar tus éxitos pasados y resaltar
+          tu proceso de diseño, generarás confianza en posibles clientes,
+          empleadores o colaboradores. Y aumentarás las posibilidades de ser
+          contratado.
+        </p>
+          <video width="220" height="220" controls>
+            <source src="ruta_del_video.webm" type="video/webm" />
+            Impresion juego
+          </video>
+          <video width="220" height="220" controls>
+            <source src="ruta_del_video.webm" type="video/webm" />
+            Impresion juego
+          </video>
+          <video width="220" height="220" controls>
+            <source src="ruta_del_video.webm" type="video/webm" />
+            Impresion juego
+          </video>
+        </section>
+
+        <section id="formulario">
+         <form>
+          <label for="nombre">Nombre:</label> 
+          <input type="text" id="nombre" name="nombre" required> 
+          <label for="email">Correo Electrónico:</label> 
+          <input type="email" id="email" name="email" required> 
+          <label for="asunto">Asunto:</label> 
+          <input type="text" id="asunto" name="asunto" required> 
+          <label for="mensaje">Mensaje:</label> 
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea> 
+          <input type="submit" value="Enviar">
+        </form>
+        </section>
+      </div>
+    </div>
+
+    <div class="pie">
+      <div class="enlaces">
+        <a href="index.html">AVISO LEGAL</a> |
+        <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>|
+        <a href="index.html"> DISE&Ntilde;O: AaronGomez</a>|
+        <a href="index.html">INSTAGRAM</a>| <a href="index.html">FACEBOOK</a>|
+        <a href="index.html">GITHUB</a>
+      </div>
+    </div>
   </body>
 
   <!--
