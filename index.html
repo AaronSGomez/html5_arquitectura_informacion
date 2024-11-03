@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
     <link rel="stylesheet" href="style.css" />
     <title>Proyectos3D</title>
+  <!-- script que llama a las distintas secciones del menu y solo muestra esas secciones -->
     <script>
       function mostrarSeccion(seccionId) {
         var secciones = document.querySelectorAll('section')
@@ -37,7 +38,7 @@
       <div class="nameweb">p3d Proyectos, make is possible</div>
     </div>
 
-    <!--contenido pagina cliente-->
+    <!--contenido pagina -->
     <div class="contentpag">
       <!--menu siempre visible-->
       <nav class="navbox">
@@ -47,6 +48,7 @@
         <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>
       </nav>
        <div class="content">
+        <!-- clase Inicio active, para que al cargar la pagina me muestre la bienvenida-->
         <section id="inicio" class="active">
           <h1>Proyectos 3d, aqui encontraras tutoriales</h1>
             <p>
@@ -73,6 +75,7 @@
           </p>
 
         </section>
+        <!--Seccion Quien soy con un poco de informacion sobre mi-->
         <section id="quien">
           <h1>Aarón Gómez</h1>
           <p >Ciclo formativo de grado superior en Administración de sistemas informáticos. </p>
@@ -103,6 +106,7 @@
           </p>
 
         </section>
+        <!--Seccion proyectos videos con apertura en nueva pestaña al presionar los enlaces inferiores, o visualizacion desde el navegador, e imagenes-->
         <section id="proyectos">
           
           <h2>Imágenes y videos de proyectos</h2>
@@ -147,6 +151,7 @@
         </p>
         </section>
 
+        <!--Seccion formulario de contacto validado envio a ninguna parte de momento-->
         <section id="formulario">
          
     <div class="formdiv">
@@ -179,7 +184,7 @@
         </section>
       </div>
     </div>
-
+<!--Enlaces en pie de pagina a distintas ubicaciones sugeridas en ejercicio y sin referenciar nada, salvo el contacto al formulario-->
     <div class="pie">
       <div class="enlaces">
         <a href="index.html">AVISO LEGAL</a> |
