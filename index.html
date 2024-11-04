@@ -9,7 +9,7 @@
       name="keywords"
       content="print3d, creality, prusa, bambu, orcaslicer, stl, 3mf, "
     />
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" id="favicon" />
     <link rel="stylesheet" href="style.css" />
     <title>Proyectos3D</title>
   <!-- script que llama a las distintas secciones del menu y solo muestra esas secciones -->
@@ -26,45 +26,39 @@
 
   <body>
     <div class="header">
-      <div class="logo">
-        <img
-          height="110px"
-          width="110px"
-          align="left"
-          src="img/logo.png"
-          alt="Logo empresa p3d"
-        />
+      <div class="logo" id="logo">
+        <img height="110px" width="110px" align="left" src="img/logo.png" alt="Logo empresa p3d"/>
       </div>
-      <div class="nameweb">p3d Proyectos, make is possible</div>
+      <div class="nameweb">P3D - "Modelando el Futuro, Capa a Capa"</div>
     </div>
 
     <!--contenido pagina -->
     <div class="contentpag">
       <!--menu siempre visible-->
-      <nav class="navbox">
+      <nav class="main" id="main">
         <a href="#" onclick="mostrarSeccion('inicio')">INICIO</a>
         <a href="#" onclick="mostrarSeccion('quien')">QUIEN SOY</a>
         <a href="#" onclick="mostrarSeccion('proyectos')">PROYECTOS</a>
         <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>
       </nav>
-       <div class="content">
+       <div class="content" id="content">
         <!-- clase Inicio active, para que al cargar la pagina me muestre la bienvenida-->
         <section id="inicio" class="active">
           <h1>Proyectos 3d, aqui encontraras tutoriales</h1>
             <p>
-            <img class="image_iz" src="img/fotos/IMG-20241102-WA0004.jpg" width="150" align="left">
+            <img class="image_iz" src="img/fotos/IMG-20241102-WA0004.jpg" width="150" align="left" alt="gato portagafas 3d">
             Todas las impresiones mostradas, han sido realizadas tras varios ajustes, a veces, como es frecuente en este mundo, despuies de varias impresiones fallidas.
             Impresiones desde que abarcan desde juguetes hasta herramientas de carpinteria y diseño.
             
             </p>
           <h2>Informacion util</h2>
-          <img class="image_der" src="img/fotos/IMG-20241102-WA0005.jpg" width="150" align="right">
+          <img class="image_der" src="img/fotos/IMG-20241102-WA0005.jpg" width="150" align="right" alt="ender v3 ke">
             <p>
             En estos tutoriales usamos la impresora Ender 3 v3 KE, sacamos el maximo rendimiento con el filamento Sunlu High Speed PLA, con un coste medio de 17€/kg, alcanzando velocidades de impresion de entre 300mm/s hasta un maximo de 600 mm/s.
           </p>
           <p> 
             Los STL fueron obtenidos de forma gratuita en estas páginas web:
-            <ul>
+            <ul id="link_list">
               <li><a href="https://www.thingiverse.com/" class="atext">Thingiverse.com</a> Descargue archivos y constrúyalos con su impresora 3D, cortadora láser o CNC. </li>
               <li><a href="https://cults3d.com/es" class="atext">Cults3d.com</a> Primer sitio independiente de archivos para impresoras 3D・Descarga los mejores objetos para impresión 3D・Comparte tus diseños con los makers de Cults3D. </li>
               <li><a href="https://www.printables.com/" class="atext">Printables.com</a> Sitio comunitario para usuarios de impresoras 3D. Descubre miles de magníficos modelos 3D imprimibles, descárgalos gratis y lee artículos interesantes.</li>
@@ -123,11 +117,11 @@
           </video>
           <video width="45%" controls>
             <source src="video/1729450682.mp4" type="video/webm" />
-            Impresion juego
+            Impresion soporte movil, base
           </video>
           <video width="45%" controls >
             <source src="video/1729946506.mp4" type="video/webm" />
-            Impresion juego
+            Impresion antorcha minecraft
           </video>
         </p>
           <p> Impresion juego <a href="video/1726155141.mp4" target="_blank" class="atext">Quarto</a> material PLA verde, impreso a 0,20 grosor capa, velocidad contronos 150mm/s, reyeno interior 300mm/s, 15% relleno.
@@ -142,12 +136,12 @@
          
         <h3>Imágenes de algunos proyectos</h3>
         <p align="center">
-          <image src="img/fotos/IMG-20241102-WA0003.jpg" width="300px"></image>
-          <image src="img/fotos/IMG-20241102-WA0004.jpg" width="300px"></image>
-          <image src="img/fotos/IMG-20241102-WA0005.jpg" width="300px"></image>
-          <image src="img/fotos/IMG-20241102-WA0006.jpg" width="300px"></image>
-          <image src="img/fotos/IMG-20241102-WA0007.jpg" width="300px"></image>
-          <image src="img/fotos/IMG-20241102-WA0008.jpg" width="300px"></image>
+          <image src="img/fotos/IMG-20241102-WA0003.jpg" width="300px" alt="antorcha minecraft"></image>
+          <image src="img/fotos/IMG-20241102-WA0004.jpg" width="300px" alt="gato portagafas"></image>
+          <image src="img/fotos/IMG-20241102-WA0005.jpg" width="300px" alt="soporte movil sobre impresora 3d"></image>
+          <image src="img/fotos/IMG-20241102-WA0006.jpg" width="300px" alt="brazo soporte camara nebula"></image>
+          <image src="img/fotos/IMG-20241102-WA0007.jpg" width="300px" alt="soporte modulo ke G-sensor"></image>
+          <image src="img/fotos/IMG-20241102-WA0008.jpg" width="300px" alt="dummy deadpool"></image>
         </p>
         </section>
 
@@ -156,7 +150,7 @@
          
     <div class="formdiv">
       <div class="formtitulo">Formulario de Contacto</div>
-      <form>
+      <form id="formContact">
           <div class="formgrupo">
               <label for="nombre" class="formlabel">Nombre</label>
               <input type="text" id="nombre" class="forminput">
@@ -185,44 +179,19 @@
       </div>
     </div>
 <!--Enlaces en pie de pagina a distintas ubicaciones sugeridas en ejercicio y sin referenciar nada, salvo el contacto al formulario-->
-    <div class="pie">
-      <div class="enlaces">
+    <div class="footer" id="footer">
+      <nav class="link" id="footerlinks">
         <a href="index.html">AVISO LEGAL</a> |
         <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>|
         <a href="index.html"> DISE&Ntilde;O: AaronGomez</a>|
-        <a href="index.html">INSTAGRAM</a>| <a href="index.html">FACEBOOK</a>|
-        <a href="index.html">GITHUB</a>
-      </div>
+        <a href="https://www.instagram.com/pumukimak/">INSTAGRAM</a>| <a href="https://www.facebook.com/busktlavida">FACEBOOK</a>|
+        <a href="https://github.com/AaronSGomez/html5_arquitectura_informacion">GITHUB</a>
+      </nav>
     </div>
   </body>
 
   <!--
-  Head La etiqueta head debe de estar completa con todos los metadatos
-  correctos, así como un favicon y un título adecuado a la temática escogida.
 
-  Contenido del body 
-  Encabezado: Logotipo o imagen representativa Menú de
-  navegación: De momento puede ser ficticio, pero debe de representar un contenido
-  lógico para la aplicación. 
-  Por ejemplo: enlaces "falsos" o mediante id a
-  contenido que aparece más adelante a lo largo de ella. 
-  Título principal de la página 
-
-  Organización semántica Usa etiquetas semánticas para estructurar el contenido de forma clara y precisa, 
-  por ejemplo: section para diferentes secciones de la página 
-  article para entradas de blog, noticias, etc. 
-  aside para contenido secundario 
-  figure para imágenes con leyendas header y 
-  footer para encabezado y pie de página 
-  main para el contenido principal 
-  No tienes que usarlas todas obligatoriamente, pero una buena organización será muy valorable.
-  
-  Accesibilidad Usa etiquetas alt para describir las imágenes. 
-  
-  Estructura el contenido de forma que sea fácil de leer y comprender. 
-  
-  Pie de página Incluye la siguiente información de manera completa o parcial: 
-  Información de contacto /Copyright (ficticio) /Enlaces a redes sociales 
   
   Crea un formulario de contacto simple con los siguientes campos: Nombre Correo electrónico Asunto Mensaje
   Valida los campos del formulario para evitar errores (opcional). 
