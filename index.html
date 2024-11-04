@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Aaron Gomez" />
@@ -27,7 +27,7 @@
   <body>
     <div class="header">
       <div class="logo" id="logo">
-        <img height="110px" width="110px" align="left" src="img/logo.png" alt="Logo empresa p3d"/>
+        <img height="110px" width="110px" align="left" src="img/logo.png" alt="Logo empresa p3d" title="logo generado por copilot en base a mis especificaciones"/>
       </div>
       <div class="nameweb">P3D - "Modelando el Futuro, Capa a Capa"</div>
     </div>
@@ -46,13 +46,13 @@
         <section id="inicio" class="active">
           <h1>Proyectos 3d, aqui encontraras tutoriales</h1>
             <p>
-            <img class="image_iz" src="img/fotos/IMG-20241102-WA0004.jpg" width="150" align="left" alt="gato portagafas 3d">
+            <img class="image_iz" src="img/fotos/IMG-20241102-WA0004.jpg" width="150" align="left" alt="gato portagafas 3d" title="gato impreso y pintado para colocar gafas">
             Todas las impresiones mostradas, han sido realizadas tras varios ajustes, a veces, como es frecuente en este mundo, despuies de varias impresiones fallidas.
             Impresiones desde que abarcan desde juguetes hasta herramientas de carpinteria y diseño.
             
             </p>
           <h2>Informacion util</h2>
-          <img class="image_der" src="img/fotos/IMG-20241102-WA0005.jpg" width="150" align="right" alt="ender v3 ke">
+          <img class="image_der" src="img/fotos/IMG-20241102-WA0005.jpg" width="150" align="right" alt="ender v3 ke" title="Impresora 3D Creatily ender v3 ke">
             <p>
             En estos tutoriales usamos la impresora Ender 3 v3 KE, sacamos el maximo rendimiento con el filamento Sunlu High Speed PLA, con un coste medio de 17€/kg, alcanzando velocidades de impresion de entre 300mm/s hasta un maximo de 600 mm/s.
           </p>
@@ -108,19 +108,19 @@
 
           <p align="center">
           <video width="45%" controls>
-              <source src="video/1726155141.mp4" type="video/webm" />
+              <source src="video/1726155141.mp4" type="video/webm" title="timelapse impresion piezas juego quarto"/>
               Impresion juego quarto
           </video>
           <video width="45%" controls >
-            <source src="video/1728233168.mp4" type="video/webm" />
+            <source src="video/1728233168.mp4" type="video/webm" title="timelapse de impresion soportes gorra"/>
             Impresion soporte gorras
           </video>
           <video width="45%" controls>
-            <source src="video/1729450682.mp4" type="video/webm" />
+            <source src="video/1729450682.mp4" type="video/webm" title="timelapse impresion base soporte movil"/>
             Impresion soporte movil, base
           </video>
           <video width="45%" controls >
-            <source src="video/1729946506.mp4" type="video/webm" />
+            <source src="video/1729946506.mp4" type="video/webm" title="timelapse impresion de pieza central antorcha/lampara minecraf" />
             Impresion antorcha minecraft
           </video>
         </p>
@@ -136,12 +136,12 @@
          
         <h3>Imágenes de algunos proyectos</h3>
         <p align="center">
-          <image src="img/fotos/IMG-20241102-WA0003.jpg" width="300px" alt="antorcha minecraft"></image>
-          <image src="img/fotos/IMG-20241102-WA0004.jpg" width="300px" alt="gato portagafas"></image>
-          <image src="img/fotos/IMG-20241102-WA0005.jpg" width="300px" alt="soporte movil sobre impresora 3d"></image>
-          <image src="img/fotos/IMG-20241102-WA0006.jpg" width="300px" alt="brazo soporte camara nebula"></image>
-          <image src="img/fotos/IMG-20241102-WA0007.jpg" width="300px" alt="soporte modulo ke G-sensor"></image>
-          <image src="img/fotos/IMG-20241102-WA0008.jpg" width="300px" alt="dummy deadpool"></image>
+          <image src="img/fotos/IMG-20241102-WA0003.jpg" width="300px" alt="antorcha minecraft" title="imagen de antorcha mincraft montada y pintada"></image>
+          <image src="img/fotos/IMG-20241102-WA0004.jpg" width="300px" alt="gato portagafas"title="gato impreso y pintado para colocar gafas"></image>
+          <image src="img/fotos/IMG-20241102-WA0005.jpg" width="300px" alt="soporte movil sobre impresora 3d" title="imagen de soporte movil sobre impresora 3d"></image>
+          <image src="img/fotos/IMG-20241102-WA0006.jpg" width="300px" alt="brazo soporte camara nebula" title="impresora 33 con foco de camara sobre brazo soporte cam nebula"></image>
+          <image src="img/fotos/IMG-20241102-WA0007.jpg" width="300px" alt="soporte modulo ke G-sensor" title="foco en impresora 3d sobre soporte modulo G.sensor"></image>
+          <image src="img/fotos/IMG-20241102-WA0008.jpg" width="300px" alt="dummy deadpool" title="dummy con estilo deaadpool a medio pintar con armas en pteg"></image>
         </p>
         </section>
 
@@ -152,24 +152,24 @@
       <div class="formtitulo">Formulario de Contacto</div>
       <form id="formContact">
           <div class="formgrupo">
-              <label for="nombre" class="formlabel">Nombre</label>
-              <input type="text" id="nombre" class="forminput">
+              <label for="nombre" class="formlabel" >Nombre</label>
+              <input type="text" id="nombre" class="forminput" required maxlength="20">
           </div>
           <div class="formgrupo">
               <label for="apellidos" class="formlabel">Apellidos</label>
-              <input type="text" id="apellidos" class="forminput">
+              <input type="text" id="apellidos" class="forminput" required maxlength="60">
           </div>
           <div class="formgrupo">
               <label for="correo" class="formlabel">Correo Electrónico</label>
-              <input type="email" id="correo" class="forminput">
+              <input type="email" id="correo" class="forminput" required maxlength="40">
           </div>
           <div class="formgrupo">
               <label for="asunto" class="formlabel">Asunto</label>
-              <input type="text" id="asunto" class="forminput">
+              <input type="text" id="asunto" class="forminput" required maxlength="60">
           </div>
           <div class="formgrupo">
               <label for="texto" class="formlabel">Texto</label>
-              <textarea id="texto" class="formtextarea"></textarea>
+              <textarea id="texto" class="formtextarea" required maxlength="350"></textarea>
           </div>
           <div class="formgrupo">
               <button type="submit" class="formbutton">Enviar</button>
@@ -184,16 +184,13 @@
         <a href="index.html">AVISO LEGAL</a> |
         <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>|
         <a href="index.html"> DISE&Ntilde;O: AaronGomez</a>|
-        <a href="https://www.instagram.com/pumukimak/">INSTAGRAM</a>| <a href="https://www.facebook.com/busktlavida">FACEBOOK</a>|
-        <a href="https://github.com/AaronSGomez/html5_arquitectura_informacion">GITHUB</a>
+        <a href="https://www.instagram.com/pumukimak/" target="_blank">INSTAGRAM</a>| 
+        <a href="https://www.facebook.com/busktlavida" target="_blank">FACEBOOK</a>|
+        <a href="https://github.com/AaronSGomez/html5_arquitectura_informacion" target="_blank">GITHUB</a>
       </nav>
     </div>
   </body>
 
   <!--
-
-  
-  Crea un formulario de contacto simple con los siguientes campos: Nombre Correo electrónico Asunto Mensaje
-  Valida los campos del formulario para evitar errores (opcional). 
-  Otro tipo de formulario que se adecue a la temática también se dará por correcto. -->
+ -->
 </html>
