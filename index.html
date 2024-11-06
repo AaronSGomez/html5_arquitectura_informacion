@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" id="favicon" />
     <link rel="stylesheet" href="style.css" />
     <title>Proyectos3D</title>
+    
   <!-- script que llama a las distintas secciones del menu y solo muestra esas secciones -->
     <script>
       function mostrarSeccion(seccionId) {
@@ -25,26 +26,25 @@
   </head>
 
   <body>
-    <div class="header">
-      <div class="logo" id="logo">
-        <img height="110px" width="110px" align="left" src="img/logo.png" alt="Logo empresa p3d" title="logo generado por copilot en base a mis especificaciones"/>
-      </div>
-      <div class="nameweb">P3D - "Modelando el Futuro, Capa a Capa"</div>
-    </div>
+    <header class="header">
+      <img class="logo" height="110px" width="110px" align="left" src="img/logo.png" alt="Logo empresa p3d" title="logo generado por copilot en base a mis especificaciones"/>
+      <h1 class="nameweb">P3D - "Modelando el Futuro, Capa a Capa"</h1>
+    </header>
 
     <!--contenido pagina -->
-    <div class="contentpag">
       <!--menu siempre visible-->
       <nav class="main" id="main">
-        <a href="#" onclick="mostrarSeccion('inicio')">INICIO</a>
-        <a href="#" onclick="mostrarSeccion('quien')">QUIEN SOY</a>
-        <a href="#" onclick="mostrarSeccion('proyectos')">PROYECTOS</a>
-        <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>
+        <ul>
+          <li><a href="#" onclick="mostrarSeccion('inicio')">INICIO</a></li>
+          <li><a href="#" onclick="mostrarSeccion('quien')">QUIEN SOY</a></li>
+          <li><a href="#" onclick="mostrarSeccion('proyectos')">PROYECTOS</a></li>
+          <li><a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a></li>
+        </ul>
       </nav>
-       <div class="content" id="content">
+       <main class="content" id="content">
         <!-- clase Inicio active, para que al cargar la pagina me muestre la bienvenida-->
         <section id="inicio" class="active">
-          <h1>Proyectos 3d, aqui encontraras tutoriales</h1>
+          <h2>Proyectos 3d, aqui encontraras tutoriales</h2>
             <p>
             <img class="image_iz" src="img/fotos/IMG-20241102-WA0004.jpg" width="150" align="left" alt="gato portagafas 3d" title="gato impreso y pintado para colocar gafas">
             Todas las impresiones mostradas, han sido realizadas tras varios ajustes, a veces, como es frecuente en este mundo, despuies de varias impresiones fallidas.
@@ -71,7 +71,7 @@
         </section>
         <!--Seccion Quien soy con un poco de informacion sobre mi-->
         <section id="quien">
-          <h1>Aarón Gómez</h1>
+          <h2>Aarón Gómez</h2>
           <p >Ciclo formativo de grado superior en Administración de sistemas informáticos. </p>
           <p >(IFCD0210) Certificación profesional en Desarrollo de aplicaciones con tecnologia web 2014 (RD 1531/2011, de 31 de octubre por el RD 628/2013, de 2 de agosto).</p>
           <h3>Sobre mi</h3>
@@ -176,19 +176,20 @@
           </div>
       </form>
         </section>
-      </div>
-    </div>
+      </main>
 <!--Enlaces en pie de pagina a distintas ubicaciones sugeridas en ejercicio y sin referenciar nada, salvo el contacto al formulario-->
-    <div class="footer" id="footer">
+    <footer class="footer" id="footer">
       <nav class="link" id="footerlinks">
-        <a href="index.html">AVISO LEGAL</a> |
-        <a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a>|
-        <a href="index.html"> DISE&Ntilde;O: AaronGomez</a>|
-        <a href="https://www.instagram.com/pumukimak/" target="_blank">INSTAGRAM</a>| 
-        <a href="https://www.facebook.com/busktlavida" target="_blank">FACEBOOK</a>|
-        <a href="https://github.com/AaronSGomez/html5_arquitectura_informacion" target="_blank">GITHUB</a>
+        <ul>
+          <li><a href="index.html">AVISO LEGAL</a></li> |
+          <li><a href="#" onclick="mostrarSeccion('formulario')">CONTACTO</a></li>|
+          <li><a href="index.html"> DISE&Ntilde;O: AaronGomez</a>|
+          <li><a href="https://www.instagram.com/pumukimak/" target="_blank">INSTAGRAM</a></li>| 
+          <li><a href="https://www.facebook.com/busktlavida" target="_blank">FACEBOOK</a></li>|
+          <li><a href="https://github.com/AaronSGomez/html5_arquitectura_informacion" target="_blank">GITHUB</a></li>
+        </ul>
       </nav>
-    </div>
+    </footer>
   </body>
 
   <!--
